@@ -11,7 +11,6 @@ function App() {
             <div className="App">
                 <nav>
                     <Link to="/">Home</Link>
-                    <Link to="/payment-status">Payment Status</Link>
                 </nav>
                 <main>
                     <Routes>
@@ -23,7 +22,6 @@ function App() {
                         } />
                         <Route path="/payment-success" element={<PaymentSuccess />} />
                         <Route path="/payment-cancel" element={<PaymentStatus />} />
-                        <Route path="/payment-status" element={<PaymentStatus />} />
                     </Routes>
                 </main>
             </div>
