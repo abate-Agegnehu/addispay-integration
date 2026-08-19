@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PaymentForm from './components/PaymentForm';
 import PaymentStatus from './components/PaymentStatus';
 import PaymentSuccess from './components/PaymentSuccess';
@@ -9,9 +9,6 @@ function App() {
     return (
         <Router>
             <div className="App">
-                <nav>
-                    <Link to="/">Home</Link>
-                </nav>
                 <main>
                     <Routes>
                         <Route path="/" element={
